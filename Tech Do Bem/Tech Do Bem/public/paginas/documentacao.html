@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/style/documentacao.css">
+  <link rel="stylesheet" href="../assets/style/footer.css">
+  <link rel="stylesheet" href="../assets/style/header.css">
+
+</head>
+
+
+<body>
+  <header>
+    <a href="/index.html"> <img id="logo-header" src="../assets/img/Logo (2).png"></a>
+
+
+    <ul id="ul-mobile">
+      <li><img src="../assets/img/menu.png" /></li>
+    </ul>
+    <ul id="ul-desk">
+      <li><a href="/index.html">Início</a></li>
+      <li><a href="/paginas/embreve.html">Relatório</a></li>
+      <li><a href="/paginas/documentacao.html">Documentação</a></li>
+      <li><a href="./PerfilDeUsuario.html">Editar Perfil</a></li>
+
+      <li><a style="cursor: pointer ;" onclick="Sair()">Sair</a></li>
+
+    </ul>
+
+  </header>
+
+  <main>
+      <table>
+        <h1> Documentação</h1>
+        <thead>
+          <tr>
+            <th scope="col" >Documento </th>
+            <th scope="col" > Andamento/Situação </th>
+            <th scope="col" > Enviar Documento </th>
+
+          </tr>
+        </thead>
+
+      <tbody class="cor">
+        <tr>
+          <td >Estatuto Social</td>
+          <td> Aguardando Envio</td>
+          <td ><input type="file"></td>
+
+        </tr>
+        <tr>
+          <td > CNPJ</td>
+          <td> Aguardando Envio</td>
+          <td ><input type="file"></td>
+
+        </tr>
+        <tr>
+          <td >Inscrição Estadual e Municipal</td>
+          <td> Aguardando Envio</td>
+          <td ><input type="file"></td>
+
+        </tr>
+       
+      </tbody>
+      </table>
+  </main>
+
+
+  <footer>
+    <div id="footer-content">
+      <div id="footer_contacts">
+        <img id="logo-footer" src="../assets/img/Logo (2).png" alt="logo-footer">
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Páginas</h3>
+        </li>
+        <li>
+          <a href="/index.html" class="footer-link">Inicio</a>
+        </li>
+        <li>
+          <a href="./auth/login.html" class="footer-link">Login</a>
+        </li>
+        <li>
+          <a href="./auth/registro.html" class="footer-link">Registro</a>
+        </li>
+      </ul>
+      <div id="footer_subscribe">
+        <h3>Deixar contato</h3>
+        <p>
+          Entre com seu e-mail para se cadastrar e ajudar a fazer o bem!
+        </p>
+
+        <div id="input_group">
+          <input placeholder="Email" type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer_copyright">
+      &#169
+      2024 Todos os direitos reservados. - Tech do Bem
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/6339839678.js" crossorigin="anonymous"></script>
+ <script src="../assets/js/login.js"></script>
+</body>
+
+</html>

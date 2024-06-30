@@ -1,0 +1,89 @@
+html {
+	font-family: Arial;
+	font-size: 16px;
+}
+
+.login {
+	background-color: #E9E9E9;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5%;
+	color: #ABB2B5;
+	width: 70%;
+	/* Defina a largura desejada */
+	max-width: 400px;
+	/* Adicione um valor máximo para evitar que fique muito largo em telas grandes */
+}
+#voltar-a{
+	text-decoration: none;
+	color: #313131;
+   font-weight: bold;
+}
+#voltar-a:hover{
+	color: #676666;
+
+}
+i{
+	color: #313131;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+}
+i:hover{
+	color: #676666;
+
+}
+.login h1 {
+	color: #737576;
+
+}
+label{
+	color: #3e3e3e;
+}
+input {
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+select{
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+#div-button {
+	display: flex;
+	width: 100%;
+}
+
+
+
+button {
+	background-color: #DDA63B;
+	border: none;
+	padding: 1rem;
+	width: 100%;
+	color: white;
+	cursor: pointer;
+
+}
+#sou-ong{
+	margin-right: 1rem;
+	width: 100%
+}
+
+button:hover {
+	background-color: #f5bc49;
+}
+
+@media screen and (max-width: 786px) {
+	.login {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+}

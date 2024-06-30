@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/style/perfildousuario.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/style/header.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/style/footer.css" rel="stylesheet" type="text/css" />
+  <title>Tela do usuário</title>
+</head>
+
+<body onload="RecuperarDadosDoUsuario()">
+
+
+
+  <header>
+    <a href="index.html"> <img id="logo-header" src="../assets/img/Logo (2).png"></a>
+
+
+    <ul id="ul-mobile">
+      <li><img src="../assets/imagens/menu.png" /></li>
+    </ul>
+    <ul id="ul-desk">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="./embreve.html">Relatório</a></li>
+      <li><a href="./documentacao.html">Documentação</a></li>
+      <li><a href="./PerfilDeUsuario.html">Editar Perfil</a></li>
+      <li><a style="cursor: pointer ;" onclick="Sair()">Sair</a></li>
+
+    </ul>
+
+  </header>
+
+  <main>
+    <div class="corpo"> </div>
+    <button onclick="editarPerfil()" id="editar">Editar perfil</button>
+
+
+    </div>
+
+    <label>Nome da ONG</label>
+    <form>
+      <input id="nomeOng"> </input>
+      <label>Descrição da ONG</label>
+      <input id="descricao" maxlength="165"> </input>
+      <label>Email</label>
+      <input id="email" placeholder="nomedaong@hotmail.com"> </input>
+      <label>Telefone</label>
+      <input id="telefone" maxlength="14" placeholder="(DDD)00000-0000"> </input>
+      <label>CNPJ</label>
+      <input id="CNPJ" maxlength="18" placeholder="00.000.000/0000-00"> </input>
+      <label>Localização</label>
+      <input id="localizacao" placeholder="Ex: Rio de Janeiro"> </input>
+
+    </form>
+  </main>
+
+  <footer>
+    <div id="footer-content">
+      <div id="footer_contacts">
+        <img id="logo-footer" src="../assets/img/Logo (2).png" alt="logo-footer">
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Páginas</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Inicio</a>
+        </li>
+        <li>
+          <a href="../paginas/auth/login.html" class="footer-link">Login</a>
+        </li>
+        <li>
+          <a href="../paginas/auth/registro.html" class="footer-link">Registro</a>
+        </li>
+      </ul>
+      <div id="footer_subscribe">
+        <h3>Deixar contato</h3>
+        <p>
+          Entre com seu e-mail para se cadastrar e ajudar a fazer o bem!
+        </p>
+
+        <div id="input_group">
+          <input placeholder="Email" type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer_copyright">
+      &#169
+      2024 Todos os direitos reservados. - Tech do Bem
+    </div>
+  </footer>
+
+  <script src="../assets/js/perfil-usuario.js"></script>
+  <script src="../assets/js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./assets/style/footer.css">
+  <link rel="stylesheet" href="./assets/style/header.css">
+  <link rel="stylesheet" href="./assets/style/modal.css">
+
+</head>
+
+
+<body>
+
+  <header>
+  <a href="/index.html">  <img id="logo-header" src="./assets/img/Logo (2).png" ></a>
+  
+
+    <ul id="ul-mobile">
+      <li><img src="./assets/img/menu.png" /></li>
+    </ul>
+    <ul id="ul-desk">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="../public/paginas/historias.html">Histórias de Sucesso</a></li>
+    </ul>
+    <ul class="button">
+      <li>
+        <a href="./paginas/auth/login.html  "> <button>Login</button></a>
+        <a href="./paginas/auth/registro.html"> <button>Registro</button></a>
+      </li>
+    </ul>
+  </header>
+
+  <section class="container">
+
+    <div id="container-div">
+    <h2>Tech do bem</h2>
+
+    <div id="container-button">
+      <div>
+        <a href="./paginas/auth/login.html"> <button> Sou ONG</button></a>
+      </div>
+      <div>
+        <button> Quero doar</button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <main>
+    <div id="contador">
+     <h1>Dinheiro arrecadadado</h1>
+     <h2>💸R$10.000💸</h2>
+    </div>
+    <section id="sec-card">
+
+      <div class="card">
+        <img src="./assets/img/card1.jpg" alt="card1">
+        <p> Faça a diferença na vida de quem precisa. Contribua agora e ajude a transformar realidades.
+        </p>
+         <button onclick="PegarOngs()" id="openDialogButton">Me voluntariar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/img/card2.jpg" alt="card2">
+        <p> Sua doação pode salvar vidas. Junte-se a nós nessa causa e faça sua parte.
+        </p>
+        <button onclick="PegarOngs()" id="openDialogButton">Me voluntariar</button>
+      </div>
+      <div class="card">
+        <img src="./assets/img/card3.jpg" alt="card3">
+        <p> Juntos, podemos construir um mundo melhor. Doe e faça parte dessa mudança positiva.
+        </p>
+        <button onclick="PegarOngs()" id="openDialogButton">Me voluntariar</button>
+      </div>
+    </section>
+
+  </main>
+
+  <section id="porque-doar">
+    <h2>Por que doar?</h2>
+    <div id="porque-doar-div-principal">
+      <div class="div-sub-doar">
+        <img src="./assets/img/icon1.png" alt="icon1">
+        <p>Com sua doação, podemos oferecer refeições nutritivas e combater a fome em nossa comunidade.</p>
+        <button>Doar</button>
+
+      </div>
+      <div class="div-sub-doar">
+        <img src="./assets/img/icon2.png" alt="icon2">
+        <p>Ao doar, você está contribuindo para que mais pessoas tenham acesso a abrigos seguros e dignos.</p>
+        <button>Doar</button>
+
+      </div>
+      <div class="div-sub-doar">
+        <img src="./assets/img/icon3.png" alt="icon3">
+        <p>Sua generosidade pode garantir que crianças carentes recebam educação de qualidade e oportunidades para um
+          futuro melhor.</p>
+          <button>Doar</button>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="footer-content">
+      <div id="footer_contacts">
+        <img id="logo-footer" src="./assets/img/Logo (2).png" alt="logo-footer">
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Páginas</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Inicio</a>
+        </li>
+        <li>
+          <a href="./paginas/auth/login.html" class="footer-link">Login</a>
+        </li>
+        <li>
+          <a href="./paginas/auth/registro.html" class="footer-link">Registro</a>
+        </li>
+        <li><a class="footer-link" href="../public/paginas/historias.html">Histórias de Sucesso</a></li>
+      <li><a class="footer-link" href="../public/paginas/politica.html">Política de Privacidade</a></li>
+
+      </ul>
+      <div id="footer_subscribe">
+        <h3>Deixar contato</h3>
+        <p>
+          Entre com seu e-mail para se cadastrar e ajudar a fazer o bem!
+        </p>
+
+        <div id="input_group">
+          <input placeholder="Email" type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer_copyright">
+      &#169
+      2024 Todos os direitos reservados. - Tech do Bem
+    </div>
+  </footer>
+
+
+  <dialog id="volunteerDialog">
+      <div class="container-modal">
+        <button id="closeDialogButton">X</button>
+
+          <form class="form" id="volunteerForm" >
+              <h2 id="h2-modal">Se inscreva para se voluntariar em uma ONG.<h2>
+              <div class="input-group">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+              </div>
+              <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+              <div class="input-group">
+                  <label for="cpf">CPF</label>
+                  <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+              </div>
+              <div id="select-dinamico" class="input-group">
+                
+</div>
+              <div class="input-group">
+                  <label for="interest">Interesse</label>
+                  <input type="text" id="interest" name="interest" placeholder="Digite a área de interesse" required>
+              </div>
+              <div class="input-group">
+                  <label for="phone">Telefone</label>
+                  <input type="text" id="phone" name="phone" placeholder="Digite seu telefone" required>
+              </div>
+         
+              <div class="input-group">
+                  <label for="skills">Habilidades</label>
+                  <input type="text" id="skills" name="skills" placeholder="Digite suas habilidades" required>
+              </div>
+              <button onclick="AdicionarVoluntario()" >Enviar</button>
+          </form>
+      </div>
+  </dialog>
+
+  <script>
+      const openDialogButton = document.getElementById('openDialogButton');
+      const closeDialogButton = document.getElementById('closeDialogButton');
+      const volunteerDialog = document.getElementById('volunteerDialog');
+
+      openDialogButton.addEventListener('click', () => {
+          volunteerDialog.showModal();
+      });
+
+      closeDialogButton.addEventListener('click', () => {
+          volunteerDialog.close();
+      });
+  </script>
+ <script src="./assets/js/pop-up.js"></script>
+  <script src="https://kit.fontawesome.com/6339839678.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

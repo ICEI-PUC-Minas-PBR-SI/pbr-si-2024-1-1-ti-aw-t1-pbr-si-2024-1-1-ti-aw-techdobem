@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../assets/style/auth.css">
+	<title>Login</title>
+	<script src="../../assets/js/login.js"></script>
+
+</head>
+
+<body onload="VerificarLogado()">
+	<main>
+		<div class="login">
+		 <a id="voltar-a" href="/index.html"><i class="fa-solid fa-backward"> </i> Voltar</a>	
+
+			<h1>Login</h1>
+			<form>
+				<label for="email">Email</label>
+				<input id="email" type="text" name="email" placeholder="E-mail">
+				<br><br>
+				<label for="Senha">Senha</label>
+				<input id="senha" type="password" name="senha" placeholder="Senha">
+				<br><br>
+				<div id="div-button">
+				<button id="sou-ong" onclick="Logar()">Entrar</button>
+					<a id="sou-ong" href="./registro.html"><button>Sou ONG</button></a>
+				</div>
+				<br>
+				<a href="#">Esqueceu a senha?</a>
+	
+			</form>
+	
+		</div>
+	</main>
+	<script src="https://kit.fontawesome.com/6339839678.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
